@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "ts": "^0.2.2",
+    "vue": "^2.6.14"
+  },
+  "name": "tsup-mini-repo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/screetBloom/tsup-mini-repo.git",
+  "author": "screetBloom <15306225869@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "esBuild": "esbuild index.js --bundle --outfile=build/index.js --format=cjs --external:vue",
+    "tsup": ""
+  }
+}
