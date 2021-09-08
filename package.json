@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "ts": "^0.2.2",
+    "tsup": "^4.14.0",
     "vue": "^2.6.14"
   },
   "name": "tsup-mini-repo",
@@ -10,7 +10,10 @@
   "author": "screetBloom <15306225869@163.com>",
   "license": "MIT",
   "scripts": {
-    "esBuild": "esbuild index.js --bundle --outfile=build/index.js --format=cjs --external:vue",
-    "tsup": ""
+    "esbuild": "esbuild index.ts --bundle --outfile=dist-esbuild/index.js --format=cjs --external:vue",
+    "tsup": "tsup index.ts --dts --format cjs"
+  },
+  "devDependencies": {
+    "@types/node": "^16.7.13"
   }
 }
